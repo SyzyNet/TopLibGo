@@ -28,3 +28,13 @@ func SetConsoleTitle(title string) error {
 	}
 	return err
 }
+
+//StartUI function starts the UI for the program.
+func StartUI() {
+	if runtime.GOOS == "windows" {
+		println("Starting UI")
+		SetConsoleTitle("TopLib")
+	} else {
+		println("Starting UI")
+	}
+}

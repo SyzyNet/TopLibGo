@@ -29,12 +29,13 @@ func (w *Worker) StartWorker() {
 			switch i {
 			case 1: // Worker Received a Hit Task
 				HitsNumber++
-				//doing ui shit
-				fmt.Println("Got a hit!")
+
+				//Add ui update here
+
 			case 2: // Worker Received a Fail Task
 				FailsNumber++
-				//doing ui shit
-				fmt.Println("Got a fail!")
+
+				//Add ui update here
 			}
 		}
 	}()
@@ -42,7 +43,7 @@ func (w *Worker) StartWorker() {
 	WaitGroup = sync.WaitGroup{}
 
 	//Prompt the user to enter a number of bots to start
-	fmt.Println("Enter the number of bots to start: ")
+	fmt.Print("Enter the number of bots to start: ")
 
 	//Read the number of bots to start
 	fmt.Scanln(&BotCount)

@@ -1,6 +1,6 @@
-package shared
+package toplib
 
-import toplib "toplib/pkg"
+import "sync"
 
 // All global variables are defined here and can be accessed from any package.
 var (
@@ -10,10 +10,11 @@ var (
 	FailsNumber  int = 0
 	CPM          int = 0
 	Retries      int = 0
-	AccountList  []toplib.Account
-	HitList      []*toplib.Account
-	ProxyList    []*toplib.Proxy
-	OnCheck      = make(chan string)
+	AccountList  []Account
+	HitList      []*Account
+	ProxyList    []*Proxy
+	OnCheck          = make(chan int)
+	BotCount     int = 50
+	WaitGroup        = sync.WaitGroup{}
+	Semaphore    chan int
 )
-
-//Make a hits flag channel
