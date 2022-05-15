@@ -1,4 +1,4 @@
-# 🚧 THIS PROJECT IS STILL UNDER CONSTRUCTION 🚧
+# 🚧 merging into https://github.com/Minagoroshi/LuvFramework 🚧
 
 
 # TopLib GO
