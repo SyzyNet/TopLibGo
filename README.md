@@ -1,5 +1,3 @@
-# 🚧 merging into https://github.com/Minagoroshi/LuvFramework 🚧
-
 
 # TopLib GO
 ## A library for making account checkers with Go
